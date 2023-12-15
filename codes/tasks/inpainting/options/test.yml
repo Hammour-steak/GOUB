@@ -1,0 +1,37 @@
+name: goub
+suffix: ~  # add suffix to saved images
+model: denoising
+distortion: inpaint
+gpu_ids: [0]
+
+sde:
+  lambda_square: 30
+  T: 100
+  schedule: cosine # linear, cosine
+  eps: 0.005
+  
+degradation:
+  # for super-resolution
+  scale: 4
+
+  # for inpainting
+  mask_root: ~
+
+datasets:
+  test1:
+    name: Val_Dataset
+    mode: GT
+    dataroot_GT: ~
+
+#### network structures
+network_G:
+  which_model_G: ConditionalUNet
+  setting:
+    in_nc: 3
+    out_nc: 3
+    nf: 64
+    depth: 4
+
+#### path
+path:
+  pretrain_model_G: ~
