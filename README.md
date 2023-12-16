@@ -10,3 +10,5 @@ Conghan Yue<sup>*</sup>, Zhengwei Peng, Junlong Ma, Shiyan Du, Pengxu Wei, Dongy
 <img src="figs/framwork.png" alt="Framework">
 
 Official PyTorch Implementations of GOUB, a diffusion bridge model that applies the Doob's *h*-transform to the generalized Ornstein-Uhlenbeck process. This model can address general image restoration tasks without the need for specific prior knowledge.
+
+# Intallation
