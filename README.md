@@ -14,9 +14,7 @@ Official PyTorch Implementations of GOUB, a diffusion bridge model that applies 
 </div>
 
 <div align="center">
-    <img src="figs/inpaint.png" alt="Framework" width="50%"><br>
-    <img src="figs/derain.png" alt="Framework" width="50%"><br>
-    <img src="figs/sr.png" alt="Framework" width="50%">
+    <img src="figs/ir.png" alt="Framework" width="70%"><br>
 </div>
 
 # Intallation
