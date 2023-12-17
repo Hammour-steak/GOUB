@@ -30,7 +30,8 @@ This code is developed with Python3, and we recommend python>=3.8 and PyTorch ==
 1. Prepare datasets.
 2. Download pretrained checkpoints [here](https://www.baidu.com).
 3. Modify options, including dataroot_GT, dataroot_LQ and pretrain_model_G.
-4. `python test.py -opt=options/test.yml`
+4. Choose a model to sample (Default: GOUB): test function in `codes/models/denoising_model.py`.
+5. `python test.py -opt=options/test.yml`
 
 The Test results will be saved in `\results`.
 
@@ -50,7 +51,7 @@ The Training log will be saved in `\experiments`.
 * `val_freq`: Frequency of validation during training.
 * `save_checkpoint_freq`: Frequency of saving checkpoint during training.
 * `gpu_ids`: In multi-GPU training, GPU ids are separated by commas in multi-gpu training.
-* `batch_size`: In multi-GPU training, must satisfy relation: *batch_size/num_gpu>1*
+* `batch_size`: In multi-GPU training, must satisfy relation: *batch_size/num_gpu>1*.
 
 # FID
 We provid a brief guidelines for commputing FID of two set of images:
