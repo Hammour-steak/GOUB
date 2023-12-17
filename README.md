@@ -37,7 +37,7 @@ The Test results will be saved in `\results`.
 # Train
 1. Prepare datasets.
 2. Modify options, including dataroot_GT, dataroot_LQ.
-3. `python train.py -opt=options/train.yml`
+3. `python train.py -opt=options/train.yml` for single GPU.<br> `python -m torch.distributed.launch --nproc_per_node=2 --master_port=1111 train.py -opt=options/train.yml --launcher pytorch` for multi GPUs. *Attention: see [Important Option Details](#important-option-details)*.
 
 The Training log will be saved in `\experiments`.
 
@@ -49,3 +49,11 @@ The Training log will be saved in `\experiments`.
 * `niter`: Total training iterations.
 * `val_freq`: Frequency of validation during training.
 * `save_checkpoint_freq`: Frequency of saving checkpoint during training.
+* `gpu_ids`: In multi-GPU training, GPU ids are separated by commas in multi-gpu training.
+* `batch_size`: In multi-GPU training, must satisfy relation: *batch_size/num_gpu>1*
+
+# FID
+We provid a brief guidelines for commputing FID of two set of images:
+
+1. Install FID library: `pip install pytorch-fid`.
+2. Commpute FID: `python -m pytorch_fid GT_images_file_path generated_images_file_path --batch-size 1`<br>if all the images are the same size, you can remove `--batch-size 1` to accelerate commputing.
