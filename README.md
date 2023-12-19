@@ -5,7 +5,7 @@ Conghan Yue<sup>*</sup>, Zhengwei Peng, Junlong Ma, Shiyan Du, Pengxu Wei, Dongy
 <i>Department of Computer Science, Sun Yat-sen University</i> <br>
 <sup>*</sup>yuech5@mail2.sysu.edu.cn
 </div>
-<h3 align="center"> [<a href="https://arxiv.org/abs/2302.05872">arXiv</a>]</h3>
+<h3 align="center"> [<a href="https://arxiv.org/abs/2312.10299">arXiv</a>]</h3>
 
 Official PyTorch Implementations of GOUB, a diffusion bridge model that applies the Doob's *h*-transform to the generalized Ornstein-Uhlenbeck process. This model can address general image restoration tasks without the need for specific prior knowledge.
 
@@ -28,7 +28,7 @@ This code is developed with Python3, and we recommend python>=3.8 and PyTorch ==
 
 # Test
 1. Prepare datasets.
-2. Download pretrained checkpoints [here](https://www.baidu.com).
+2. Download pretrained checkpoints here.
 3. Modify options, including dataroot_GT, dataroot_LQ and pretrain_model_G.
 4. Choose a model to sample (Default: GOUB): test function in `codes/models/denoising_model.py`.
 5. `python test.py -opt=options/test.yml`
