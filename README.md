@@ -22,7 +22,7 @@ Official PyTorch Implementations of GOUB, a diffusion bridge model that applies 
 # Intallation
 This code is developed with Python3, and we recommend python>=3.8 and PyTorch ==1.13.0. Install the dependencies with Anaconda and activate the environment with:
 
-    conda env create --name GOUB python=3.8
+    conda create --name GOUB python=3.8
     conda activate GOUB
     pip install -r requrements.txt
 
