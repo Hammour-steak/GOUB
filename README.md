@@ -24,7 +24,7 @@ This code is developed with Python3, and we recommend python>=3.8 and PyTorch ==
 
     conda create --name GOUB python=3.8
     conda activate GOUB
-    pip install -r requrements.txt
+    pip install -r requirements.txt
 
 # Test
 1. Prepare datasets.
