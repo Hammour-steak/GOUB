@@ -13,3 +13,5 @@ tensorboardX
 timm
 tqdm
 gradio
+tensorboard
+ema_pytorch
