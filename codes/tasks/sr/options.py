@@ -6,11 +6,8 @@ import math
 
 import yaml
 
-try:
-    sys.path.append("../../")
-    from utils import OrderedYaml
-except ImportError:
-    pass
+sys.path.append("../../")
+from utils import OrderedYaml
 
 Loader, Dumper = OrderedYaml()
 
