@@ -1,5 +1,4 @@
 <h1 align="center"> Image Restoration Through Generalized Ornstein-Uhlenbeck Bridge </h1>
-<div align="center"> 
 
 Official PyTorch Implementations of GOUB, a diffusion bridge model that applies the Doob's *h*-transform to the generalized Ornstein-Uhlenbeck process. This model can address general image restoration tasks without the need for specific prior knowledge.
 
