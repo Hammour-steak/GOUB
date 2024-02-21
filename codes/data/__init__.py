@@ -35,26 +35,11 @@ def create_dataloader(dataset, dataset_opt, opt=None, sampler=None):
 
 def create_dataset(dataset_opt):
     mode = dataset_opt["mode"]
-    if mode == "LQ":  # Predictor
-        from data.LQ_dataset import LQDataset as D
-        dataset = D(dataset_opt)
-    elif mode == "LQGT":  # SFTMD
+    if mode == "LQGT":  # SFTMD
         from data.LQGT_dataset import LQGTDataset as D
         dataset = D(dataset_opt)
     elif mode == "GT":  # Corrector
         from data.GT_dataset import GTDataset as D
-        dataset = D(dataset_opt)
-    elif mode == 'SteLQGT':
-        from data.StereoLQGT_dataset import StereoLQGTDataset as D
-        dataset = D(dataset_opt)
-    elif mode == 'SteLQ':
-        from data.StereoLQ_dataset import StereoLQDataset as D
-        dataset = D(dataset_opt)
-    elif mode == 'BokehLQGT':
-        from data.BokehLQGT_dataset import BokehLQGTDataset as D
-        dataset = D(dataset_opt)
-    elif mode == 'BokehLQ':
-        from data.BokehLQ_dataset import BokehLQDataset as D
         dataset = D(dataset_opt)
     else:
         raise NotImplementedError("Dataset [{:s}] is not recognized.".format(mode))
