@@ -35,6 +35,14 @@ The Test results will be saved in `\results`.
 
 The Training log will be saved in `\experiments`.
 
+# Interface
+We provide the interface.py for the deraining, which can generate HQ only with LQ:
+1. Prepare options/test.yml filling in LQ path.
+2. `python interface.py`.
+3. The interface will be on the local server: 127.0.0.1.
+
+Other tasks can also be written in imitation.
+
 # Important Option Details
 * `dataroot_GT`: Ground Truth (High-Quality) data path.
 * `dataroot_LQ`: Low-Quality data path.
