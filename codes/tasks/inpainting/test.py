@@ -102,7 +102,7 @@ for test_loader in test_loaders:
 
         #### input dataset_LQ
         GT = test_data["GT"]
-        LQ = util.mask_to(GT, mask_root, mask_id=43)
+        LQ = util.mask_to(GT, mask_root, mask_id=i)
 
         model.feed_data(LQ, LQ, GT)
         tic = time.time()
