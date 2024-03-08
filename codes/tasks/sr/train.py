@@ -267,10 +267,9 @@ def main():
 
                     LQ, GT = val_data["LQ"], val_data["GT"]
                     LQ = util.upscale(LQ, scale)
-                    noisy_state = sde.noise_state(LQ)
 
                     # valid Predictor
-                    model.feed_data(noisy_state, LQ, GT)
+                    model.feed_data(LQ, LQ, GT)
                     model.test(sde)
                     visuals = model.get_current_visuals()
 
