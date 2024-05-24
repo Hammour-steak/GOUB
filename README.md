@@ -1,5 +1,19 @@
 <h1 align="center"> Image Restoration Through Generalized Ornstein-Uhlenbeck Bridge </h1>
 
+<div align="center">
+  Conghan&nbsp;Yue<sup>1</sup></a> &ensp; <b>&middot;</b> &ensp;
+  Zhengwei&nbsp;Peng</a> &ensp; <b>&middot;</b> &ensp;
+  Junlong&nbsp;Ma</a> &ensp; <b>&middot;</b> &ensp;
+  Shiyan&nbsp;Du</a> &ensp; <b>&middot;</b> &ensp;
+  Pengxu&nbsp;Wei</a> &ensp; <b>&middot;</b> &ensp;
+  Dongyu&nbsp;Zhang</a>
+  <br> <br> 
+  <sup>1</sup>yuech5@mail2.sysu.edu.cn, Sun Yat-Sen University
+  
+</div>
+<h3 align="center"> [<a href="https://arxiv.org/abs/2312.10299">arXiv</a>] [<a href="https://paperswithcode.com/paper/image-restoration-through-generalized">Papers With Code</a>]</h3>
+
+
 Official PyTorch Implementations of GOUB, a diffusion bridge model that applies the Doob's *h*-transform to the generalized Ornstein-Uhlenbeck process. This model can address general image restoration tasks without the need for specific prior knowledge.
 
 # Overview
