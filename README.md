@@ -35,7 +35,7 @@ This code is developed with Python3, and we recommend python>=3.8 and PyTorch ==
 
 # Test
 1. Prepare datasets.
-2. Download pretrained checkpoints [here](https://drive.google.com/drive/folders/1rxHiZTxNSlvM9VSoRUY_rdoDp8DBbX8C?usp=sharing).
+2. Download pretrained checkpoints [here](https://drive.google.com/drive/folders/1rxHiZTxNSlvM9VSoRUY_rdoDp8DBbX8C?usp=sharing) (also provided datasets).
 3. Modify options, including dataroot_GT, dataroot_LQ and pretrain_model_G.
 4. Choose a model to sample (Default: GOUB): test function in `codes/models/denoising_model.py`.
 5. `python test.py -opt=options/test.yml`
