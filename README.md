@@ -1,4 +1,3 @@
-```markdown
 <h1 align="center"> Image Restoration Through Generalized Ornstein-Uhlenbeck Bridge </h1>
 
 <div align="center">
@@ -74,4 +73,3 @@ We provide brief guidelines for computing the FID between two sets of images:
 
 1. Install the FID library: `pip install pytorch-fid`.
 2. Compute FID: `python -m pytorch_fid GT_images_file_path generated_images_file_path --batch-size 1`.<br>If all images have the same size, you can remove `--batch-size 1` to accelerate computation.
-```
